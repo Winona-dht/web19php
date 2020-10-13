@@ -19,7 +19,7 @@ class ArticleController extends AbstractController {
             // Redirection
             header("Location:/article/show/$id");
         }else{
-            $datas = $categories->SqlGetAll(BDD::getInstance());
+
             return $this->twig->render("Article/add.html.twig",[
                 "categorieList" => $datas
             ]);
