@@ -14,6 +14,19 @@
             <option>Léo</option>
             <option >Aegir</option>
         </select>
+
+        <select name="Categorie">
+            {% for categorie in categorieList %}
+                <option value="Flutteur">Flutteur</option>
+                <option value="Go">Go</option>
+                <option value="Java">Java</option>
+                <option value="JS">JS</option>
+                <option value="PHP">PHP</option>
+            {% endfor %}
+
+        </select>
+
+
         <input type="submit" value="Enregistrer les modifications">
     </form>
 
